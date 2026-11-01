@@ -48,3 +48,9 @@ We also provide a [`justfile`](https://just.systems/) for Makefile'esque command
 ## See Also
 
 - [nixos.wiki: Packaging Rust projects with nix](https://nixos.wiki/wiki/Rust#Packaging_Rust_projects_with_nix)
+
+- [Rust Nix Template](https://github.com/srid/rust-nix-template) a good batteries included nix template for rust projects
+
+- [Python Package Template](https://github.com/peterclemenko/python-package-template)  a good batteries included nix template for python projects
+
+
