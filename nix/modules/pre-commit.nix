@@ -13,7 +13,7 @@
           enable = true;
           stages = [ "pre-push" ];
           pass_filenames = false;
-          entry = "${pkgs.trufflehog}/bin/trufflehog git file://. --since-commit main --results=verified --fail --no-update";
+          entry = "${pkgs.trufflehog}/bin/trufflehog git file://. --since-commit main --results=verified --fail";
         };
       };
     };
