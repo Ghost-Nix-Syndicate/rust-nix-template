@@ -233,7 +233,7 @@ Strict Meta Checks: Nixpkgs enforces strict metadata requirements. Ensure your m
 
 No External Flake Inputs: Upstream packages cannot rely on flake inputs; everything must pull cleanly from standard nixpkgs inputs passed via callPackage.
 
-https://github.com/Phantom-Dejima-Cortex/rust-nix-template
+https://github.com/Ghost-Nix-Syndicate/rust-nix-template
 
 
 
@@ -263,9 +263,9 @@ rustPlatform.buildRustPackage rec {
 
   meta = with lib; {
     description = "A short description of what your crate does";
-    homepage = "https://github.com/Phantom-Dejima-Cortex/your-crate-name";
+    homepage = "https://github.com/Ghost-Nix-Syndicate/your-crate-name";
     license = with licenses; [ mit asl20 ]; # Match your Cargo.toml
-    maintainers = [ maintainers.Phantom-Dejima-Cortex ];
+    maintainers = [ maintainers.Ghost-Nix-Syndicate ];
     platforms = platforms.unix;
   };
 }
@@ -275,7 +275,7 @@ To ensure compatibility with the Nix User Repository (NUR) indexer, your reposit
 Nix
 { pkgs ? import <nixpkgs> { } }:
 {
-  # The attribute name here becomes nur.repos.Phantom-Dejima-Cortex.your-crate-name
+  # The attribute name here becomes nur.repos.Ghost-Nix-Syndicate.your-crate-name
   your-crate-name = pkgs.callPackage ./pkgs/your-crate { };
 }
 Step 3: Wire It Into Your Template's flake.nix
@@ -313,7 +313,7 @@ Register your repository on the NUR Submission Dashboard.
 Once accepted, your package will automatically build and be accessible to anyone via:
 
 Bash
-nix profile install github:nix-community/NUR --impure --expr 'pkgs: pkgs.nur.repos.Phantom-Dejima-Cortex.your-crate-name'
+nix profile install github:nix-community/NUR --impure --expr 'pkgs: pkgs.nur.repos.Ghost-Nix-Syndicate.your-crate-name'
 Preparing for Upstream Nixpkgs Later
 When you decide to migrate this package from your NUR into upstream nixpkgs:
 
