@@ -1,10 +1,17 @@
 [package]
-authors = ["Sridhar Ratnakumar <srid@srid.ca>"]
+authors = ["Peter Clemenko <aoi@protonmail.ch>"]
 edition = "2021"
 # If you change the name here, you must also do it in flake.nix (and run `cargo generate-lockfile` afterwards)
 name = "rust-nix-template"
 description = "A simple Rust project using Nix"
 version = "0.1.0"
+documentation = "https://docs.rs/your-crate-name"
+readme = "README.md"
+homepage = "https://github.com/Ghost-Nix-Syndicate/rust-nix-template"
+repository = "https://github.com/Ghost-Nix-Syndicate/rust-nix-template"
+license = "MIT OR Apache-2.0"                                           # Use a standard SPDX license identifier
+keywords = ["utility", "parser"]
+categories = ["development-tools"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

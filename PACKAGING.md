@@ -1,3 +1,8 @@
+# packaging
+## todo: refine from gemini to something useful and validate
+
+
+
 how do i package a rust package for cargo crates
 
 Publishing a Rust package to crates.io involves preparing your crate's metadata, authenticating with the registry, verifying the package locally, and finally publishing it.
